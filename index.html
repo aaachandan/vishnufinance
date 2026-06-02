@@ -1,0 +1,1775 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vishnu Finance Services – तेज़ और भरोसेमंद ऋण समाधान, रायपुर छत्तीसगढ़</title>
+  <meta name="description" content="Vishnu Finance Services छत्तीसगढ़ भर में होम लोन, पर्सनल लोन, बिजनेस लोन, मॉर्गेज लोन, व्हीकल लोन और अधिक प्रदान करता है। त्वरित स्वीकृति, न्यूनतम दस्तावेज़।">
+  <meta name="keywords" content="लोन रायपुर, फाइनेंस कंपनी छत्तीसगढ़, होम लोन, पर्सनल लोन, बिजनेस लोन">
+  <meta name="author" content="Vishnu Finance Services">
+  <link rel="canonical" href="https://vishnufinanceservices.in/">
+  <meta property="og:title" content="Vishnu Finance Services – तेज़ और भरोसेमंद ऋण समाधान">
+  <meta property="og:description" content="पूरे छत्तीसगढ़ में त्वरित प्रक्रिया के साथ होम लोन, पर्सनल लोन, बिजनेस लोन, मॉर्गेज लोन और अधिक प्राप्त करें।">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#060d1a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    /* ===== RESET ===== */
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Tiro Devanagari Hindi','Inter',sans-serif;
+      background:#060d1a;
+      color:#c8d0dc;
+      overflow-x:hidden;
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+    }
+    :root{
+      --navy:#060d1a;
+      --navy-2:#0a1528;
+      --navy-3:#0f1d36;
+      --gold:#c9a84c;
+      --gold-2:#dbb95a;
+      --gold-3:#a88830;
+      --gold-light:#f0dfa0;
+      --white:#ffffff;
+      --off-white:#e8edf4;
+      --muted:#7a8aa0;
+      --muted-2:#94a8c0;
+      --glass:rgba(255,255,255,0.04);
+      --glass-2:rgba(255,255,255,0.07);
+      --glass-border:rgba(255,255,255,0.07);
+      --glass-border-2:rgba(255,255,255,0.12);
+      --shadow:0 8px 40px rgba(0,0,0,0.4);
+      --shadow-gold:0 4px 24px rgba(201,168,76,0.2);
+      --radius-sm:10px;
+      --radius-md:16px;
+      --radius-lg:24px;
+      --ease:cubic-bezier(.25,.46,.45,.94);
+      --ease-bounce:cubic-bezier(.34,1.56,.64,1);
+      --ease-out:cubic-bezier(0,.55,.45,1);
+    }
+    a{text-decoration:none;color:inherit}
+    ul{list-style:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1200px;margin:0 auto;padding:0 24px}
+    .container-narrow{max-width:900px;margin:0 auto;padding:0 24px}
+
+    /* ===== PRELOADER ===== */
+    #preloader{
+      position:fixed;inset:0;z-index:99999;
+      background:#060d1a;
+      display:flex;align-items:center;justify-content:center;
+      flex-direction:column;gap:24px;
+      transition:opacity .7s,visibility .7s
+    }
+    #preloader.hide{opacity:0;visibility:hidden;pointer-events:none}
+    .loader-symbol{position:relative;width:70px;height:70px}
+    .loader-ring{
+      position:absolute;inset:0;border-radius:50%;
+      border:3px solid rgba(201,168,76,.08);
+      border-top-color:var(--gold);
+      animation:spin .8s linear infinite
+    }
+    .loader-ring:nth-child(2){
+      inset:10px;border-width:2px;
+      animation-direction:reverse;
+      animation-duration:1.2s;
+      border-top-color:var(--gold-2)
+    }
+    @keyframes spin{to{transform:rotate(360deg)}}
+    .loader-text{
+      font-size:13px;letter-spacing:6px;
+      color:var(--gold);text-transform:uppercase;
+      font-weight:500
+    }
+    .loader-bar{
+      width:160px;height:2px;border-radius:4px;
+      background:rgba(255,255,255,.05);overflow:hidden
+    }
+    .loader-bar-inner{
+      height:100%;width:0;border-radius:4px;
+      background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));
+      animation:loadBar 2s ease-in-out forwards
+    }
+    @keyframes loadBar{0%{width:0}100%{width:100%}}
+
+    /* ===== SCROLL PROGRESS ===== */
+    #scrollProgress{
+      position:fixed;top:0;left:0;height:3px;
+      background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));
+      z-index:99998;width:0;
+      transition:width .1s linear
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar{
+      position:fixed;top:0;left:0;right:0;z-index:9997;
+      padding:18px 0;
+      transition:all .5s var(--ease)
+    }
+    .navbar.scrolled{
+      background:rgba(6,13,26,.88);
+      backdrop-filter:blur(28px) saturate(1.2);
+      -webkit-backdrop-filter:blur(28px) saturate(1.2);
+      border-bottom:1px solid var(--glass-border);
+      padding:10px 0
+    }
+    .navbar .container{display:flex;align-items:center;justify-content:space-between}
+    .nav-logo{
+      display:flex;align-items:center;gap:10px;
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:24px;font-weight:700;
+      color:var(--white);position:relative;z-index:2
+    }
+    .nav-logo .logo-icon{
+      width:40px;height:40px;border-radius:10px;
+      overflow:hidden;flex-shrink:0;
+      display:flex;align-items:center;justify-content:center;
+      background:var(--white);
+      border:2px solid var(--gold)
+    }
+    .nav-logo .logo-icon img{width:100%;height:100%;object-fit:contain}
+    .nav-logo span{color:var(--gold)}
+    .nav-links{display:flex;align-items:center;gap:4px}
+    .nav-links a{
+      padding:8px 18px;border-radius:8px;
+      font-size:14px;font-weight:500;
+      color:var(--muted-2);position:relative;
+      transition:all .3s var(--ease)
+    }
+    .nav-links a::after{
+      content:'';position:absolute;bottom:2px;left:50%;transform:translateX(-50%)scaleX(0);
+      width:60%;height:2px;border-radius:4px;
+      background:var(--gold);
+      transition:transform .3s var(--ease)
+    }
+    .nav-links a:hover::after,.nav-links a.active::after{transform:translateX(-50%)scaleX(1)}
+    .nav-links a:hover,.nav-links a.active{color:var(--gold)}
+    .nav-cta{
+      padding:10px 20px!important;border-radius:10px!important;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold))!important;
+      color:var(--navy)!important;font-weight:700!important;
+      font-size:13px!important;margin-left:8px;
+      box-shadow:0 4px 20px rgba(201,168,76,.25);
+      transition:all .3s var(--ease)!important
+    }
+    .nav-cta::after{display:none!important}
+    .nav-cta:hover{transform:translateY(-2px)!important;box-shadow:0 8px 30px rgba(201,168,76,.35)!important}
+    .nav-toggle{
+      display:none;flex-direction:column;cursor:pointer;
+      background:none;border:none;padding:6px;z-index:9999;
+      gap:5px;
+      -webkit-tap-highlight-color:transparent
+    }
+    .nav-toggle span{
+      display:block;width:26px;height:2.5px;
+      background:var(--white);border-radius:4px;
+      transition:all .35s var(--ease);
+      transform-origin:center
+    }
+    .nav-toggle.active span:nth-child(1){transform:rotate(45deg)translate(5px,5px)}
+    .nav-toggle.active span:nth-child(2){opacity:0;transform:translateX(-12px)}
+    .nav-toggle.active span:nth-child(3){transform:rotate(-45deg)translate(5px,-5px)}
+    .nav-overlay{
+      position:fixed;inset:0;z-index:9996;
+      background:rgba(0,0,0,.6);
+      backdrop-filter:blur(4px);
+      opacity:0;visibility:hidden;
+      transition:all .4s var(--ease)
+    }
+    .nav-overlay.open{opacity:1;visibility:visible}
+
+    /* ===== HERO ===== */
+    .hero{
+      min-height:100vh;display:flex;align-items:center;
+      position:relative;overflow:hidden;
+      padding:140px 0 80px
+    }
+    .hero-canvas{
+      position:absolute;inset:0;overflow:hidden;pointer-events:none
+    }
+    .hero-glow{
+      position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none
+    }
+    .hero-glow:nth-child(1){
+      width:600px;height:600px;
+      background:radial-gradient(circle,rgba(201,168,76,.12),transparent);
+      top:-20%;right:-10%;
+      animation:drift 18s ease-in-out infinite
+    }
+    .hero-glow:nth-child(2){
+      width:450px;height:450px;
+      background:radial-gradient(circle,rgba(37,99,235,.08),transparent);
+      bottom:-10%;left:-8%;
+      animation:drift 22s ease-in-out infinite reverse
+    }
+    .hero-glow:nth-child(3){
+      width:250px;height:250px;
+      background:radial-gradient(circle,rgba(201,168,76,.08),transparent);
+      top:45%;left:15%;
+      animation:drift 14s ease-in-out infinite 2s
+    }
+    @keyframes drift{
+      0%,100%{transform:translate(0,0)scale(1)}
+      25%{transform:translate(40px,-50px)scale(1.06)}
+      50%{transform:translate(-30px,30px)scale(.94)}
+      75%{transform:translate(20px,20px)scale(1.02)}
+    }
+    .hero-dots{
+      position:absolute;inset:0;
+      background-image:radial-gradient(rgba(255,255,255,.04)1px,transparent 1px);
+      background-size:48px 48px;
+      mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black 30%,transparent 70%);
+      -webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 50%,black 30%,transparent 70%)
+    }
+    .hero .container{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .hero-badge{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:7px 18px;border-radius:50px;
+      background:rgba(201,168,76,.1);
+      border:1px solid rgba(201,168,76,.2);
+      font-size:12px;color:var(--gold-2);font-weight:500;letter-spacing:.3px;
+      margin-bottom:28px;
+      transform:translateY(30px);opacity:0;
+      animation:fadeSlideUp .6s .15s var(--ease) forwards
+    }
+    .hero h1{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:clamp(34px,5vw,60px);
+      line-height:1.1;letter-spacing:-.02em;
+      color:var(--white);
+      margin-bottom:22px;
+      transform:translateY(30px);opacity:0;
+      animation:fadeSlideUp .6s .25s var(--ease) forwards
+    }
+    .hero h1 .glow-text{
+      background:linear-gradient(135deg,var(--gold),var(--gold-2),var(--gold-light));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text
+    }
+    .hero p{
+      font-size:17px;color:var(--muted);
+      max-width:530px;margin-bottom:34px;line-height:1.7;
+      transform:translateY(30px);opacity:0;
+      animation:fadeSlideUp .6s .35s var(--ease) forwards
+    }
+    .hero-btns{
+      display:flex;flex-wrap:wrap;gap:12px;margin-bottom:44px;
+      transform:translateY(30px);opacity:0;
+      animation:fadeSlideUp .6s .45s var(--ease) forwards
+    }
+    @keyframes fadeSlideUp{to{transform:translateY(0);opacity:1}}
+
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:15px 30px;border-radius:12px;
+      font-size:15px;font-weight:600;cursor:pointer;border:none;
+      transition:all .35s var(--ease);
+      white-space:nowrap;
+      -webkit-tap-highlight-color:transparent;
+      position:relative;overflow:hidden
+    }
+    .btn::after{
+      content:'';position:absolute;inset:0;border-radius:inherit;
+      background:linear-gradient(135deg,rgba(255,255,255,.15),transparent);
+      opacity:0;transition:opacity .4s
+    }
+    .btn:hover::after{opacity:1}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--gold-3),var(--gold),var(--gold-2));
+      color:var(--navy);
+      box-shadow:0 4px 24px rgba(201,168,76,.3)
+    }
+    .btn-primary:hover{transform:translateY(-3px);box-shadow:0 8px 36px rgba(201,168,76,.4)}
+    .btn-secondary{
+      background:var(--glass-2);
+      color:var(--white);
+      border:1px solid var(--glass-border-2);
+      backdrop-filter:blur(10px)
+    }
+    .btn-secondary:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+    .btn-whatsapp{background:#25D366;color:white;box-shadow:0 4px 20px rgba(37,211,102,.3)}
+    .btn-whatsapp:hover{background:#1da851;transform:translateY(-3px);box-shadow:0 8px 30px rgba(37,211,102,.4)}
+
+    .hero-trust{
+      display:flex;flex-wrap:wrap;gap:14px;
+      transform:translateY(30px);opacity:0;
+      animation:fadeSlideUp .6s .55s var(--ease) forwards
+    }
+    .hero-trust li{
+      display:flex;align-items:center;gap:8px;
+      font-size:13px;color:var(--muted-2);
+      padding:6px 14px;border-radius:8px;
+      background:rgba(255,255,255,.03);
+      border:1px solid var(--glass-border)
+    }
+    .hero-trust li i{color:var(--gold);font-size:12px}
+
+    .hero-visual{position:relative;display:flex;justify-content:center}
+    .hero-card-stack{width:100%;max-width:500px;perspective:1200px}
+    .hero-card{
+      background:rgba(255,255,255,.04);
+      backdrop-filter:blur(16px);
+      -webkit-backdrop-filter:blur(16px);
+      border:1px solid var(--glass-border);
+      border-radius:var(--radius-md);
+      padding:22px 20px;
+      display:flex;align-items:center;gap:16px;
+      margin-bottom:14px;
+      transition:all .4s var(--ease);
+      transform:translateX(60px)rotateY(-8deg);
+      opacity:0;
+      animation:cardSlideIn .6s var(--ease) forwards;
+      box-shadow:0 8px 32px rgba(0,0,0,.3);
+      cursor:default
+    }
+    .hero-card:nth-child(1){animation-delay:.2s}
+    .hero-card:nth-child(2){animation-delay:.32s}
+    .hero-card:nth-child(3){animation-delay:.44s}
+    .hero-card:nth-child(4){animation-delay:.56s}
+    @keyframes cardSlideIn{
+      to{transform:translateX(0)rotateY(0);opacity:1}
+    }
+    .hero-card:hover{
+      transform:translateX(6px)translateY(-2px)!important;
+      border-color:rgba(201,168,76,.25);
+      box-shadow:0 12px 44px rgba(0,0,0,.4)
+    }
+    .hero-card-icon{
+      width:48px;height:48px;border-radius:12px;flex-shrink:0;
+      background:rgba(201,168,76,.1);
+      display:flex;align-items:center;justify-content:center;
+      font-size:20px;color:var(--gold);
+      transition:all .4s
+    }
+    .hero-card:hover .hero-card-icon{
+      background:var(--gold);color:var(--navy)
+    }
+    .hero-card-text h4{font-size:15px;color:var(--white);font-weight:600}
+    .hero-card-text p{font-size:13px;color:var(--muted);margin:0}
+    .hero-card-badge{
+      margin-left:auto;padding:5px 14px;border-radius:20px;flex-shrink:0;
+      background:rgba(201,168,76,.1);
+      color:var(--gold);font-size:11px;font-weight:600;letter-spacing:.3px
+    }
+
+    /* ===== SECTION ===== */
+    section{padding:100px 0;position:relative}
+    .section-label{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:6px 18px;border-radius:50px;
+      background:rgba(201,168,76,.08);
+      border:1px solid rgba(201,168,76,.12);
+      color:var(--gold-2);
+      font-size:11px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;
+      margin-bottom:18px
+    }
+    .section-title{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:clamp(30px,3.8vw,46px);
+      color:var(--white);line-height:1.15;
+      margin-bottom:14px;letter-spacing:-.01em
+    }
+    .section-sub{
+      color:var(--muted);font-size:16px;line-height:1.7;
+      max-width:620px;margin-bottom:50px
+    }
+    .text-center{text-align:center}
+    .text-center .section-sub{margin-left:auto;margin-right:auto}
+
+    /* reveal */
+    .reveal{opacity:0;transform:translateY(50px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .reveal-l{opacity:0;transform:translateX(-60px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal-l.visible{opacity:1;transform:translateX(0)}
+    .reveal-r{opacity:0;transform:translateX(60px);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal-r.visible{opacity:1;transform:translateX(0)}
+    .reveal-s{opacity:0;transform:scale(.92);transition:opacity .7s var(--ease-out),transform .7s var(--ease-out)}
+    .reveal-s.visible{opacity:1;transform:scale(1)}
+
+    /* ===== ABOUT ===== */
+    .about{background:linear-gradient(180deg,var(--navy),var(--navy-2))}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+    .about-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:32px}
+    .about-stat{
+      padding:22px;border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      text-align:center;transition:all .3s
+    }
+    .about-stat:hover{background:var(--glass-2);border-color:rgba(201,168,76,.15)}
+    .about-stat h3{font-size:28px;font-weight:800;background:linear-gradient(135deg,var(--gold),var(--gold-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .about-stat p{font-size:13px;color:var(--muted);margin:4px 0 0}
+    .about-visual{
+      border-radius:var(--radius-lg);
+      background:linear-gradient(145deg,rgba(201,168,76,.08),rgba(6,13,26,.6));
+      border:1px solid var(--glass-border);
+      padding:48px 40px;
+      display:flex;flex-direction:column;align-items:center;justify-content:center;
+      min-height:380px;text-align:center;
+      position:relative;overflow:hidden
+    }
+    .about-visual::before{
+      content:'';position:absolute;inset:0;
+      background:radial-gradient(ellipse at 30% 40%,rgba(201,168,76,.06),transparent 60%)
+    }
+    .about-visual-icon{font-size:70px;color:var(--gold);opacity:.5;margin-bottom:16px}
+    .about-visual-logo{width:90px;height:90px;border-radius:16px;overflow:hidden;margin-bottom:16px;border:2px solid var(--gold);background:var(--white);display:flex;align-items:center;justify-content:center;padding:6px}
+    .about-visual-logo img{width:100%;height:100%;object-fit:contain}
+    .about-visual h3{font-family:'Tiro Devanagari Hindi',serif;font-size:26px;color:var(--white)}
+    .about-visual p{color:var(--gold);font-size:15px}
+    .about-visual-tags{display:flex;gap:10px;margin-top:18px;flex-wrap:wrap;justify-content:center}
+    .about-visual-tags span{
+      padding:5px 16px;border-radius:20px;
+      background:rgba(201,168,76,.08);
+      border:1px solid rgba(201,168,76,.12);
+      color:var(--gold);font-size:12px;font-weight:600
+    }
+
+    /* ===== SERVICES ===== */
+    .services{background:var(--navy)}
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(270px,1fr));
+      gap:20px
+    }
+    .service-card{
+      background:var(--glass);
+      backdrop-filter:blur(12px);
+      border:1px solid var(--glass-border);
+      border-radius:var(--radius-md);
+      padding:30px 28px;
+      transition:all .4s var(--ease);
+      position:relative;overflow:hidden;
+      cursor:pointer;
+      transform-style:preserve-3d
+    }
+    .service-card::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:3px;
+      background:linear-gradient(90deg,var(--gold-3),var(--gold),var(--gold-2));
+      transform:scaleX(0);transform-origin:left;
+      transition:transform .5s var(--ease)
+    }
+    .service-card:hover::before{transform:scaleX(1)}
+    .service-card:hover{
+      transform:translateY(-8px);
+      border-color:rgba(201,168,76,.2);
+      box-shadow:0 16px 48px rgba(0,0,0,.4)
+    }
+    .service-card-shine{
+      position:absolute;inset:0;pointer-events:none;
+      background:linear-gradient(135deg,rgba(255,255,255,.04) 0%,transparent 50%);
+      opacity:0;transition:opacity .4s
+    }
+    .service-card:hover .service-card-shine{opacity:1}
+    .service-icon{
+      width:56px;height:56px;border-radius:14px;
+      background:rgba(201,168,76,.1);
+      display:flex;align-items:center;justify-content:center;
+      font-size:24px;color:var(--gold);
+      margin-bottom:18px;
+      transition:all .4s
+    }
+    .service-card:hover .service-icon{
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);
+      box-shadow:0 4px 20px rgba(201,168,76,.25)
+    }
+    .service-card h3{font-size:18px;color:var(--white);margin-bottom:8px;font-weight:700}
+    .service-card p{font-size:14px;color:var(--muted);margin-bottom:20px;line-height:1.65}
+    .service-btn{
+      display:inline-flex;align-items:center;gap:8px;
+      font-size:14px;font-weight:600;color:var(--gold);
+      transition:all .3s var(--ease);
+      background:none;border:none;cursor:pointer;padding:0
+    }
+    .service-btn i{transition:transform .3s;font-size:12px}
+    .service-btn:hover i{transform:translateX(5px)}
+
+    /* ===== WHY ===== */
+    .why{background:var(--navy-2)}
+    .why-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(290px,1fr));
+      gap:16px
+    }
+    .why-item{
+      display:flex;align-items:flex-start;gap:16px;
+      padding:24px;border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      transition:all .35s var(--ease)
+    }
+    .why-item:hover{border-color:rgba(201,168,76,.2);transform:translateX(5px);background:var(--glass-2)}
+    .why-icon{
+      width:44px;height:44px;border-radius:12px;flex-shrink:0;
+      background:rgba(201,168,76,.1);
+      display:flex;align-items:center;justify-content:center;
+      font-size:19px;color:var(--gold)
+    }
+    .why-text h4{font-size:15px;color:var(--white);font-weight:600;margin-bottom:3px}
+    .why-text p{font-size:13px;color:var(--muted);margin:0;line-height:1.6}
+
+    /* ===== PROCESS ===== */
+    .process{background:var(--navy)}
+    .process-timeline{
+      display:flex;justify-content:space-between;gap:16px;
+      position:relative;flex-wrap:wrap
+    }
+    .process-timeline::before{
+      content:'';position:absolute;top:36px;left:60px;right:60px;
+      height:2px;
+      background:linear-gradient(90deg,var(--glass-border),var(--gold),var(--glass-border));
+      opacity:.3
+    }
+    .process-step{
+      flex:1;min-width:140px;text-align:center;
+      position:relative;padding-top:12px
+    }
+    .process-step-num{
+      width:54px;height:54px;border-radius:50%;
+      background:var(--glass);border:2px solid var(--glass-border-2);
+      display:flex;align-items:center;justify-content:center;
+      margin:0 auto 14px;
+      font-size:20px;font-weight:700;color:var(--gold);
+      position:relative;z-index:2;
+      transition:all .4s var(--ease)
+    }
+    .process-step.active .process-step-num,
+    .process-step:hover .process-step-num{
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);border-color:var(--gold);
+      box-shadow:0 0 30px rgba(201,168,76,.25);
+      transform:scale(1.06)
+    }
+    .process-step h4{font-size:14px;color:var(--white);font-weight:600;margin-bottom:4px}
+    .process-step p{font-size:12px;color:var(--muted);margin:0}
+
+    /* ===== CALCULATOR ===== */
+    .calculator{background:var(--navy-2)}
+    .calc-wrap{
+      display:grid;grid-template-columns:1fr 1fr;gap:44px;
+      background:var(--glass);
+      backdrop-filter:blur(20px);
+      border:1px solid var(--glass-border);
+      border-radius:var(--radius-lg);
+      padding:44px
+    }
+    .calc-header{margin-bottom:28px}
+    .calc-header h3{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:24px;color:var(--white);margin-bottom:4px
+    }
+    .calc-header p{font-size:14px;color:var(--muted)}
+    .calc-field{margin-bottom:24px}
+    .calc-field label{
+      display:flex;justify-content:space-between;
+      font-size:14px;color:var(--muted-2);margin-bottom:8px
+    }
+    .calc-field label span{color:var(--gold);font-weight:600}
+    .calc-field input[type="range"]{
+      width:100%;-webkit-appearance:none;appearance:none;
+      height:5px;border-radius:4px;
+      background:rgba(255,255,255,.08);
+      outline:none;transition:background .3s
+    }
+    .calc-field input[type="range"]::-webkit-slider-thumb{
+      -webkit-appearance:none;appearance:none;
+      width:22px;height:22px;border-radius:50%;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      cursor:pointer;
+      box-shadow:0 0 16px rgba(201,168,76,.35);
+      transition:transform .2s
+    }
+    .calc-field input[type="range"]::-webkit-slider-thumb:hover{transform:scale(1.15)}
+    .calc-field input[type="range"]::-moz-range-thumb{
+      width:22px;height:22px;border-radius:50%;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      cursor:pointer;border:none
+    }
+    .calc-results{display:flex;flex-direction:column;justify-content:center;gap:14px}
+    .calc-result-card{
+      padding:18px 24px;border-radius:14px;
+      background:rgba(201,168,76,.04);
+      border:1px solid rgba(201,168,76,.1);
+      transition:all .3s
+    }
+    .calc-result-card:hover{border-color:rgba(201,168,76,.2)}
+    .calc-result-card .label{font-size:13px;color:var(--muted)}
+    .calc-result-card .value{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:28px;color:var(--gold);font-weight:700
+    }
+    .calc-result-card.sub .value{font-size:22px}
+
+    /* ===== STATS ===== */
+    .stats{
+      background:linear-gradient(160deg,var(--navy),rgba(201,168,76,.05),var(--navy));
+      position:relative;overflow:hidden
+    }
+    .stats::before{
+      content:'';position:absolute;inset:0;
+      background:radial-gradient(ellipse 50% 40% at 50% 60%,rgba(201,168,76,.06),transparent)
+    }
+    .stats-grid{
+      display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+      position:relative;z-index:2
+    }
+    .stat-card{
+      text-align:center;padding:36px 20px 28px;
+      border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      transition:all .4s var(--ease);
+      position:relative;overflow:hidden
+    }
+    .stat-card::before{
+      content:'';position:absolute;top:0;left:0;right:0;height:3px;
+      background:linear-gradient(90deg,transparent,var(--gold),transparent);
+      opacity:0;transition:opacity .4s
+    }
+    .stat-card:hover::before{opacity:1}
+    .stat-card:hover{transform:translateY(-6px);border-color:rgba(201,168,76,.2);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+    .stat-number{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:44px;font-weight:800;line-height:1.1;
+      background:linear-gradient(135deg,var(--gold),var(--gold-2),var(--gold-light));
+      -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+      margin-bottom:2px
+    }
+    .stat-card p{font-size:14px;color:var(--muted);margin:0;font-weight:500}
+    .stat-icon{font-size:28px;margin-bottom:10px;color:var(--gold);opacity:.4}
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials{background:var(--navy)}
+    .test-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill,minmax(290px,1fr));
+      gap:20px
+    }
+    .test-card{
+      padding:30px 28px;border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      transition:all .4s var(--ease);
+      position:relative
+    }
+    .test-card::before{
+      content:'\201C';position:absolute;top:16px;right:24px;
+      font-size:56px;color:var(--gold);opacity:.08;
+      font-family:'Tiro Devanagari Hindi',serif;line-height:1
+    }
+    .test-card:hover{transform:translateY(-6px);border-color:rgba(201,168,76,.2);box-shadow:0 12px 40px rgba(0,0,0,.3)}
+    .test-stars{color:var(--gold);margin-bottom:12px;font-size:13px;letter-spacing:2px}
+    .test-text{
+      font-size:14px;color:var(--muted-2);
+      line-height:1.7;margin-bottom:18px;
+      font-style:italic
+    }
+    .test-author{display:flex;align-items:center;gap:12px}
+    .test-avatar{
+      width:44px;height:44px;border-radius:50%;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      display:flex;align-items:center;justify-content:center;
+      font-size:15px;font-weight:700;color:var(--navy);flex-shrink:0
+    }
+    .test-name{font-size:14px;color:var(--white);font-weight:600}
+    .test-role{font-size:12px;color:var(--muted)}
+
+    /* ===== PARTNERS ===== */
+    .partners{background:var(--navy-2)}
+    .partner-grid{
+      display:flex;flex-wrap:wrap;justify-content:center;gap:14px
+    }
+    .partner-item{
+      padding:18px 28px;border-radius:12px;
+      background:var(--glass);border:1px solid var(--glass-border);
+      font-size:14px;font-weight:700;
+      color:var(--muted-2);letter-spacing:.5px;
+      transition:all .35s var(--ease);
+      text-align:center;min-width:120px
+    }
+    .partner-item:hover{
+      border-color:var(--gold);
+      color:var(--gold);
+      transform:translateY(-4px);
+      box-shadow:0 8px 24px rgba(201,168,76,.12);
+      background:rgba(201,168,76,.04)
+    }
+
+    /* ===== FAQ ===== */
+    .faq{background:var(--navy)}
+    .faq-grid{max-width:780px;margin:0 auto}
+    .faq-item{
+      margin-bottom:12px;border-radius:14px;
+      background:var(--glass);border:1px solid var(--glass-border);
+      overflow:hidden;transition:all .3s
+    }
+    .faq-item:hover{border-color:rgba(201,168,76,.12)}
+    .faq-question{
+      width:100%;padding:20px 24px;
+      display:flex;justify-content:space-between;align-items:center;
+      background:none;border:none;cursor:pointer;
+      font-size:15px;font-weight:600;color:var(--white);
+      text-align:left;transition:all .3s;
+      font-family:'Inter',sans-serif
+    }
+    .faq-question i{
+      color:var(--gold);transition:transform .4s var(--ease);
+      font-size:13px;flex-shrink:0;margin-left:16px
+    }
+    .faq-item.active .faq-question i{transform:rotate(180deg)}
+    .faq-answer{
+      max-height:0;overflow:hidden;
+      transition:max-height .45s var(--ease),padding .45s var(--ease)
+    }
+    .faq-item.active .faq-answer{max-height:300px;padding:0 24px 22px}
+    .faq-answer p{font-size:14px;color:var(--muted);line-height:1.7}
+
+    /* ===== CONTACT ===== */
+    .contact{background:var(--navy-2)}
+    .contact-wrap{
+      display:grid;grid-template-columns:1fr 1fr;gap:44px
+    }
+    .contact-info{display:flex;flex-direction:column;gap:16px}
+    .contact-card{
+      display:flex;align-items:flex-start;gap:16px;
+      padding:22px;border-radius:var(--radius-md);
+      background:var(--glass);border:1px solid var(--glass-border);
+      transition:all .3s
+    }
+    .contact-card:hover{border-color:rgba(201,168,76,.12)}
+    .contact-card i{
+      font-size:20px;color:var(--gold);
+      width:42px;height:42px;display:flex;align-items:center;justify-content:center;
+      border-radius:10px;background:rgba(201,168,76,.08);flex-shrink:0
+    }
+    .contact-card h4{font-size:15px;color:var(--white);margin-bottom:2px;font-weight:600}
+    .contact-card p{font-size:14px;color:var(--muted)}
+    .contact-form{
+      padding:36px;border-radius:var(--radius-lg);
+      background:var(--glass);border:1px solid var(--glass-border);
+      backdrop-filter:blur(20px)
+    }
+    .contact-form h3{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:22px;color:var(--white);margin-bottom:20px
+    }
+    .form-group{margin-bottom:16px;position:relative}
+    .form-group input,.form-group select,.form-group textarea{
+      width:100%;padding:14px 18px;border-radius:10px;
+      background:rgba(255,255,255,.04);
+      border:1px solid var(--glass-border);
+      color:var(--white);font-size:14px;
+      font-family:'Inter',sans-serif;
+      transition:all .3s;outline:none
+    }
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{
+      border-color:rgba(201,168,76,.4);
+      background:rgba(201,168,76,.03);
+      box-shadow:0 0 0 3px rgba(201,168,76,.06)
+    }
+    .form-group textarea{height:110px;resize:vertical}
+    .form-group select option{background:var(--navy-2);color:var(--white)}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .form-group .input-icon{
+      position:absolute;left:16px;top:50%;transform:translateY(-50%);
+      color:var(--muted);font-size:15px
+    }
+
+    /* ===== MAP ===== */
+    .map-wrap{
+      margin-top:44px;border-radius:var(--radius-lg);
+      overflow:hidden;border:1px solid var(--glass-border);
+      height:260px
+    }
+    .map-wrap iframe{width:100%;height:100%;border:none}
+
+    /* ===== FOOTER ===== */
+    .footer{
+      background:#040912;
+      padding:64px 0 0;
+      border-top:1px solid var(--glass-border)
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns:2fr 1.2fr 1.2fr 1.6fr;
+      gap:48px
+    }
+    .footer-brand{display:flex;flex-direction:column;align-items:flex-start}
+    .footer-brand h3{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:22px;color:var(--white);margin-bottom:12px
+    }
+    .footer-logo{width:48px;height:48px;border-radius:10px;overflow:hidden;margin-bottom:12px;border:2px solid var(--gold);background:var(--white);display:flex;align-items:center;justify-content:center;padding:4px}
+    .footer-logo img{width:100%;height:100%;object-fit:contain}
+    .footer-brand h3 span{color:var(--gold)}
+    .footer-brand p{font-size:14px;color:var(--muted);line-height:1.7;margin-bottom:18px}
+    .footer-social{display:flex;gap:10px}
+    .footer-social a{
+      width:40px;height:40px;border-radius:10px;
+      background:var(--glass);border:1px solid var(--glass-border);
+      display:flex;align-items:center;justify-content:center;
+      color:var(--muted);font-size:15px;
+      transition:all .35s var(--ease)
+    }
+    .footer-social a:hover{
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);border-color:var(--gold);
+      transform:translateY(-3px)
+    }
+    .footer h4{font-size:15px;color:var(--white);font-weight:600;margin-bottom:18px}
+    .footer-links li{margin-bottom:10px}
+    .footer-links a{
+      font-size:14px;color:var(--muted);
+      transition:all .3s var(--ease);
+      display:flex;align-items:center;gap:8px
+    }
+    .footer-links a:hover{color:var(--gold);padding-left:5px}
+    .footer-contact li{
+      display:flex;gap:12px;margin-bottom:14px;
+      font-size:14px;color:var(--muted)
+    }
+    .footer-contact i{color:var(--gold);font-size:15px;margin-top:3px;flex-shrink:0}
+    .footer-bottom{
+      margin-top:44px;padding:20px 0;
+      border-top:1px solid var(--glass-border);
+      display:flex;justify-content:space-between;align-items:center;
+      flex-wrap:wrap;gap:12px;
+      font-size:13px;color:#5a6a80
+    }
+    .footer-bottom i{color:var(--gold);margin:0 3px}
+    .ray-credit{
+      position:fixed;bottom:28px;left:50%;transform:translateX(-50%);
+      z-index:9994;text-align:center;pointer-events:none
+    }
+    .ray-credit a{
+      display:inline-flex;align-items:center;gap:6px;
+      padding:6px 14px;border-radius:20px;
+      background:rgba(6,13,26,.7);
+      backdrop-filter:blur(12px);
+      border:1px solid var(--glass-border);
+      font-size:11px;color:var(--muted);text-decoration:none;
+      pointer-events:auto;
+      transition:all .3s var(--ease)
+    }
+    .ray-credit a:hover{color:var(--gold);border-color:rgba(201,168,76,.3)}
+    .ray-credit a i{color:var(--gold);font-size:10px}
+    @media(max-width:768px){
+      .ray-credit{bottom:16px}
+      .ray-credit a{font-size:10px;padding:4px 12px}
+    }
+    @media(max-width:480px){
+      .ray-credit{bottom:80px;left:auto;right:16px;transform:none}
+    }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .wa-float{
+      position:fixed;bottom:28px;right:28px;z-index:9995;
+      display:flex;align-items:center;gap:12px;
+      text-decoration:none
+    }
+    .wa-float-tip{
+      background:var(--white);color:var(--navy);
+      padding:10px 18px;border-radius:12px;
+      font-size:13px;font-weight:600;
+      box-shadow:0 4px 20px rgba(0,0,0,.25);
+      opacity:0;transform:translateX(20px);
+      transition:all .4s var(--ease);
+      pointer-events:none;
+      white-space:nowrap
+    }
+    .wa-float:hover .wa-float-tip{opacity:1;transform:translateX(0)}
+    .wa-float-btn{
+      width:58px;height:58px;border-radius:50%;
+      background:linear-gradient(135deg,#25D366,#1da851);
+      color:white;display:flex;align-items:center;justify-content:center;
+      font-size:30px;
+      box-shadow:0 6px 28px rgba(37,211,102,.4);
+      transition:all .35s var(--ease-bounce);
+      animation:waPulse 2.5s ease-in-out infinite;
+      flex-shrink:0
+    }
+    .wa-float-btn:hover{transform:scale(1.1);box-shadow:0 8px 36px rgba(37,211,102,.5)}
+    @keyframes waPulse{
+      0%,100%{box-shadow:0 6px 28px rgba(37,211,102,.4)}
+      50%{box-shadow:0 6px 40px rgba(37,211,102,.7)}
+    }
+
+    /* ===== BACK TO TOP ===== */
+    .btt{
+      position:fixed;bottom:28px;left:28px;z-index:9995;
+      width:46px;height:46px;border-radius:50%;
+      background:linear-gradient(135deg,var(--gold-3),var(--gold));
+      color:var(--navy);display:flex;align-items:center;justify-content:center;
+      font-size:18px;cursor:pointer;border:none;
+      opacity:0;visibility:hidden;
+      transform:translateY(20px);
+      transition:all .4s var(--ease);
+      box-shadow:0 4px 20px rgba(201,168,76,.25)
+    }
+    .btt.show{opacity:1;visibility:visible;transform:translateY(0)}
+    .btt:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(201,168,76,.35)}
+
+    /* ===== MODAL ===== */
+    .modal-overlay{
+      position:fixed;inset:0;z-index:99997;
+      background:rgba(0,0,0,.65);
+      backdrop-filter:blur(12px);
+      display:none;align-items:center;justify-content:center;
+      padding:20px
+    }
+    .modal-overlay.show{display:flex}
+    .modal{
+      background:linear-gradient(145deg,var(--navy-2),var(--navy-3));
+      border:1px solid var(--glass-border-2);
+      border-radius:var(--radius-lg);
+      padding:40px;max-width:500px;width:100%;
+      max-height:90vh;overflow-y:auto;
+      animation:modalIn .4s var(--ease)
+    }
+    @keyframes modalIn{
+      from{opacity:0;transform:scale(.94)translateY(24px)}
+      to{opacity:1;transform:scale(1)translateY(0)}
+    }
+    .modal-close{
+      float:right;background:none;border:none;
+      color:var(--muted);font-size:26px;cursor:pointer;
+      transition:color .3s;line-height:1
+    }
+    .modal-close:hover{color:var(--gold)}
+    .modal h3{
+      font-family:'Tiro Devanagari Hindi',serif;
+      font-size:22px;color:var(--white);margin-bottom:6px
+    }
+    .modal p{font-size:14px;color:var(--muted);margin-bottom:24px}
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:1024px){
+      .hero .container{grid-template-columns:1fr;gap:36px}
+      .hero-visual{order:-1}
+      .hero-card-stack{max-width:100%}
+      .about-grid{grid-template-columns:1fr;gap:40px}
+      .calc-wrap{grid-template-columns:1fr}
+      .contact-wrap{grid-template-columns:1fr}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:32px}
+    }
+    @media(max-width:768px){
+      .nav-links{
+        position:fixed;top:0;right:-100%;width:300px;height:100vh;
+        background:rgba(6,13,26,.97);
+        backdrop-filter:blur(32px);
+        flex-direction:column;padding:100px 28px 28px;gap:2px;
+        transition:right .45s var(--ease);
+        border-left:1px solid var(--glass-border);
+        z-index:9998;
+        align-items:stretch
+      }
+      .nav-links.open{right:0}
+      .nav-links a{font-size:17px;padding:14px 18px;border-radius:10px}
+      .nav-links a::after{display:none}
+      .nav-cta{margin-left:0;margin-top:10px;text-align:center;padding:14px!important}
+      .nav-toggle{display:flex}
+      .process-timeline::before{display:none}
+      .process-timeline{flex-direction:column}
+      .process-step{display:flex;align-items:center;gap:16px;text-align:left;padding-top:0}
+      .process-step-num{margin:0;flex-shrink:0}
+      .hero-trust{flex-direction:column}
+      .stats-grid{grid-template-columns:1fr 1fr}
+      section{padding:64px 0}
+      .form-row{grid-template-columns:1fr}
+    }
+    @media(max-width:480px){
+      .hero h1{font-size:28px}
+      .hero p{font-size:15px}
+      .btn{padding:13px 22px;font-size:14px}
+      .calc-wrap{padding:24px}
+      .contact-form{padding:24px}
+      .modal{padding:24px}
+      .stats-grid{grid-template-columns:1fr}
+      .stat-number{font-size:36px}
+      .footer-grid{grid-template-columns:1fr}
+      .wa-float{right:16px;bottom:16px}
+      .wa-float-btn{width:52px;height:52px;font-size:26px}
+      .btt{left:16px;bottom:16px}
+    }
+
+    /* ===== SELECTION ===== */
+    ::selection{background:rgba(201,168,76,.3);color:var(--white)}
+    ::-webkit-scrollbar{width:6px}
+    ::-webkit-scrollbar-track{background:var(--navy)}
+    ::-webkit-scrollbar-thumb{background:var(--gold-3);border-radius:4px}
+    ::-webkit-scrollbar-thumb:hover{background:var(--gold)}
+  </style>
+</head>
+<body>
+
+<!-- PRELOADER -->
+<div id="preloader">
+  <div class="loader-symbol">
+    <div class="loader-ring"></div>
+    <div class="loader-ring"></div>
+  </div>
+  <div class="loader-text">Vishnu Finance</div>
+  <div class="loader-bar"><div class="loader-bar-inner"></div></div>
+</div>
+
+<!-- SCROLL PROGRESS -->
+<div id="scrollProgress"></div>
+
+<!-- NAV OVERLAY -->
+<div class="nav-overlay" id="navOverlay"></div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#home" class="nav-logo">
+      <span class="logo-icon"><img src="logo.png" alt="Vishnu Finance Services" loading="eager"></span>
+      Vishnu <span>Finance</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-links" id="navLinks">
+      <a href="#home" class="active">होम</a>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#services">सेवाएं</a>
+      <a href="#calculator">ईएमआई कैलकुलेटर</a>
+      <a href="#faq">सामान्य प्रश्न</a>
+      <a href="#contact">संपर्क</a>
+      <a href="tel:8839215457" class="nav-cta"><i class="fas fa-phone"></i> अभी कॉल करें</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-canvas">
+    <div class="hero-glow"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-dots"></div>
+  </div>
+  <div class="container">
+    <div class="hero-text">
+      <div class="hero-badge"><i class="fas fa-shield-alt"></i> 2015 से विश्वसनीय</div>
+      <h1>हर ज़रूरत के लिए तेज़ और भरोसेमंद <span class="glow-text">ऋण समाधान</span></h1>
+      <p>पूरे छत्तीसगढ़ में त्वरित प्रक्रिया और न्यूनतम कागजी कार्रवाई के साथ होम लोन, पर्सनल लोन, मॉर्गेज लोन, बिजनेस लोन, व्हीकल लोन और प्रोजेक्ट लोन प्राप्त करें।</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary"><i class="fas fa-file-alt"></i> लोन के लिए आवेदन करें</a>
+        <a href="tel:8839215457" class="btn btn-secondary"><i class="fas fa-phone"></i> अभी कॉल करें</a>
+        <a href="https://wa.me/918839215457?text=Hello%20Vishnu%20Finance%20Services,%20I%20need%20loan%20assistance" target="_blank" rel="noopener" class="btn btn-whatsapp"><i class="fab fa-whatsapp"></i> व्हाट्सएप</a>
+        <button class="btn btn-secondary" onclick="openModal()"><i class="fas fa-check-circle"></i> पात्रता जांचें</button>
+      </div>
+      <ul class="hero-trust">
+        <li><i class="fas fa-check-circle"></i> त्वरित स्वीकृति</li>
+        <li><i class="fas fa-check-circle"></i> न्यूनतम दस्तावेज़</li>
+        <li><i class="fas fa-check-circle"></i> पूरे छत्तीसगढ़ में सेवा</li>
+        <li><i class="fas fa-check-circle"></i> विश्वसनीय वित्त भागीदार</li>
+      </ul>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-home"></i></div>
+          <div class="hero-card-text"><h4>होम लोन</h4><p>8.5% प्रति वर्ष से शुरू</p></div>
+          <span class="hero-card-badge">लोकप्रिय</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-briefcase"></i></div>
+          <div class="hero-card-text"><h4>बिजनेस लोन</h4><p>₹5 करोड़ तक</p></div>
+          <span class="hero-card-badge">बेस्ट सेलर</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-user"></i></div>
+          <div class="hero-card-text"><h4>पर्सनल लोन</h4><p>तत्काल स्वीकृति</p></div>
+          <span class="hero-card-badge">त्वरित</span>
+        </div>
+        <div class="hero-card">
+          <div class="hero-card-icon"><i class="fas fa-car"></i></div>
+          <div class="hero-card-text"><h4>व्हीकल लोन</h4><p>आसान ईएमआई विकल्प</p></div>
+          <span class="hero-card-badge">लचीला</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="section-label"><i class="fas fa-info-circle"></i> हमारे बारे में</div>
+        <h2 class="section-title">पूरे छत्तीसगढ़ में आपका विश्वसनीय वित्त भागीदार</h2>
+        <p class="section-sub" style="margin-bottom:16px">Vishnu Finance Services व्यक्तियों, परिवारों और व्यवसायों को सरकारी एवं निजी बैंकिंग संस्थानों के माध्यम से सही वित्तीय सहायता दिलाने में मदद करता है। हम लोन प्रक्रियाओं को सरल बनाते हैं और आवेदन से लेकर स्वीकृति तक पूर्ण मार्गदर्शन प्रदान करते हैं।</p>
+        <p style="color:var(--muted-2);font-size:15px;margin-bottom:28px;line-height:1.7">एक दशक के अनुभव के साथ, हमारी वित्तीय विशेषज्ञों की टीम सुनिश्चित करती है कि आपको सर्वोत्तम ब्याज दरें, न्यूनतम कागजी कार्रवाई और सबसे तेज़ प्रक्रिया मिले। हम आपकी लोन यात्रा को सुगम और परेशानी मुक्त बनाने के लिए प्रतिबद्ध हैं।</p>
+        <div class="about-stats">
+          <div class="about-stat"><h3>5000+</h3><p>संतुष्ट ग्राहक</p></div>
+          <div class="about-stat"><h3>₹200Cr+</h3><p>लोन वितरित</p></div>
+          <div class="about-stat"><h3>50+</h3><p>बैंकिंग भागीदार</p></div>
+          <div class="about-stat"><h3>10+</h3><p>वर्षों का अनुभव</p></div>
+        </div>
+      </div>
+      <div class="about-visual reveal-r">
+        <div class="about-visual-logo"><img src="logo.png" alt="Vishnu Finance Services" loading="lazy"></div>
+        <h3>Vishnu Finance Services</h3>
+        <p>आपका विश्वसनीय वित्त भागीदार</p>
+        <div class="about-visual-tags">
+          <span>विश्वसनीय</span>
+          <span>भरोसेमंद</span>
+          <span>तेज़</span>
+          <span>पारदर्शी</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-hand-holding-usd"></i> हमारी सेवाएं</div>
+      <h2 class="section-title">संपूर्ण ऋण समाधान</h2>
+      <p class="section-sub">व्यक्तिगत ज़रूरतों से लेकर व्यवसाय विस्तार तक, हम आपकी आवश्यकताओं के अनुरूप लोन उत्पादों की एक विस्तृत श्रृंखला प्रदान करते हैं।</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-user"></i></div>
+        <h3>पर्सनल लोन</h3>
+        <p>चिकित्सा आपातकाल, यात्रा, शिक्षा या किसी भी व्यक्तिगत ज़रूरत के लिए तत्काल पर्सनल लोन। किसी संपार्श्विक की आवश्यकता नहीं। 24 घंटे के भीतर त्वरित भुगतान।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-briefcase"></i></div>
+        <h3>बिजनेस लोन</h3>
+        <p>कार्यशील पूंजी, मशीनरी खरीद या बुनियादी ढांचे के विकास के साथ अपने व्यवसाय का विस्तार करें। लचीली अवधि के साथ ₹5 करोड़ तक का लोन।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-credit-card"></i></div>
+        <h3>सीसी लिमिट फाइनेंस</h3>
+        <p>व्यवसायों की कार्यशील पूंजी ज़रूरतों को पूरा करने के लिए कैश क्रेडिट सीमा। केवल उपयोग की गई राशि पर ब्याज के साथ लचीली निकासी और पुनर्भुगतान सुविधा।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-industry"></i></div>
+        <h3>प्रोजेक्ट लोन</h3>
+        <p>नए व्यावसायिक प्रोजेक्ट, औद्योगिक सेटअप और विस्तार योजनाओं के लिए वित्त पोषण। प्रोजेक्ट कैश फ्लो पर आधारित अनुकूलित पुनर्भुगतान संरचना।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-car"></i></div>
+        <h3>व्हीकल लोन</h3>
+        <p>कार, बाइक, वाणिज्यिक वाहनों के लिए वित्त। आकर्षक ब्याज दरें और त्वरित स्वीकृति प्रक्रिया के साथ लचीले ईएमआई विकल्प।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-home"></i></div>
+        <h3>होम लोन</h3>
+        <p>अपने सपनों के घर को हकीकत बनाएं। 8.5% से शुरू आकर्षक ब्याज दरों के साथ 30 वर्षों तक की लंबी पुनर्भुगतान अवधि।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-warehouse"></i></div>
+        <h3>मॉर्गेज लोन</h3>
+        <p>अपनी संपत्ति से मूल्य प्राप्त करें। उच्च मूल्यांकन और सबसे कम ब्याज दरों पर आवासीय या वाणिज्यिक संपत्ति के विरुद्ध लोन।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-square"></i></div>
+        <h3>प्लॉट लोन</h3>
+        <p>आवासीय या वाणिज्यिक प्लॉट खरीदने के लिए वित्त। भूमि खरीद के लिए आसान दस्तावेज़ीकरण और प्रतिस्पर्धी ब्याज दरें।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+        <h3>कंस्ट्रक्शन लोन</h3>
+        <p>हमारे निर्माण वित्त के साथ अपना सपनों का घर बनाएं। न्यूनतम दस्तावेज़ीकरण के साथ निर्माण प्रगति से जुड़ा भुगतान।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div class="service-card reveal-s">
+        <div class="service-card-shine"></div>
+        <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+        <h3>प्लॉट + कंस्ट्रक्शन लोन</h3>
+        <p>प्लॉट खरीद और निर्माण के लिए संयुक्त वित्त। एक ही आवेदन, सुव्यवस्थित प्रक्रिया और एकीकृत पुनर्भुगतान संरचना।</p>
+        <button class="service-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">अभी आवेदन करें <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="why" id="why">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-star"></i> हमें क्यों चुनें</div>
+      <h2 class="section-title">Vishnu Finance Services ही क्यों?</h2>
+      <p class="section-sub">हम पारदर्शिता, गति और ग्राहक संतुष्टि के प्रति अपनी प्रतिबद्धता के कारण अलग खड़े हैं।</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-map-marked-alt"></i></div><div class="why-text"><h4>पूरे छत्तीसगढ़ में सेवा</h4><p>हम स्थानीय विशेषज्ञता के साथ छत्तीसगढ़ के सभी जिलों में लोन सेवाएं प्रदान करते हैं।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-building"></i></div><div class="why-text"><h4>नए व्यवसायों के लिए प्रोजेक्ट लोन</h4><p>स्टार्टअप, एमएसएमई और औद्योगिक उद्यमों के लिए विशेष प्रोजेक्ट वित्त।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-university"></i></div><div class="why-text"><h4>सरकारी एवं निजी बैंकों के माध्यम से लोन</h4><p>हम सर्वोत्तम सौदे के लिए आपको 50+ बैंकिंग भागीदारों से जोड़ते हैं।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-file-contract"></i></div><div class="why-text"><h4>विभिन्न भूमि दस्तावेज़ों पर लोन उपलब्ध</h4><p>लोन प्रसंस्करण के लिए विभिन्न भूमि कागजातों की व्यापक स्वीकृति।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-user-tie"></i></div><div class="why-text"><h4>सरकारी कर्मचारियों के लिए विशेष सहायता</h4><p>सरकारी स्टाफ के लिए समर्पित योजनाएं और तेज़ प्रक्रिया।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-percent"></i></div><div class="why-text"><h4>कम ब्याज दर सहायता</h4><p>हम आपको भागीदार बैंकों से सर्वाधिक प्रतिस्पर्धी दरें दिलाने में मदद करते हैं।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-clipboard-list"></i></div><div class="why-text"><h4>पूर्ण दस्तावेज़ीकरण मार्गदर्शन</h4><p>दस्तावेज़ तैयारी और सत्यापन में अंत-से-अंत सहायता।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-rocket"></i></div><div class="why-text"><h4>त्वरित प्रक्रिया</h4><p>समर्पित संबंध प्रबंधक के साथ तेज़ टर्नअराउंड समय।</p></div></div>
+      <div class="why-item reveal"><div class="why-icon"><i class="fas fa-headset"></i></div><div class="why-text"><h4>पेशेवर परामर्श</h4><p>विशेषज्ञ वित्तीय सलाहकार हर कदम पर आपका मार्गदर्शन करते हैं।</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section class="process" id="process">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-route"></i> लोन प्रक्रिया</div>
+      <h2 class="section-title">सरल 5-चरणीय लोन प्रक्रिया</h2>
+      <p class="section-sub">लोन लेना इतना आसान कभी नहीं रहा। बस इन सरल चरणों का पालन करें।</p>
+    </div>
+    <div class="process-timeline">
+      <div class="process-step active reveal-s">
+        <div class="process-step-num">1</div>
+        <h4>आवेदन जमा करना</h4>
+        <p>अपनी बुनियादी जानकारी दें</p>
+      </div>
+      <div class="process-step reveal-s">
+        <div class="process-step-num">2</div>
+        <h4>दस्तावेज़ सत्यापन</h4>
+        <p>आवश्यक दस्तावेज़ अपलोड करें</p>
+      </div>
+      <div class="process-step reveal-s">
+        <div class="process-step-num">3</div>
+        <h4>बैंक प्रक्रिया</h4>
+        <p>बैंक आवेदन की समीक्षा करता है</p>
+      </div>
+      <div class="process-step reveal-s">
+        <div class="process-step-num">4</div>
+        <h4>लोन स्वीकृति</h4>
+        <p>लोन स्वीकृत हो जाता है</p>
+      </div>
+      <div class="process-step reveal-s">
+        <div class="process-step-num">5</div>
+        <h4>राशि वितरण</h4>
+        <p>राशि खाते में जमा हो जाती है</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EMI CALCULATOR -->
+<section class="calculator" id="calculator">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-calculator"></i> ईएमआई कैलकुलेटर</div>
+      <h2 class="section-title">अपने लोन पुनर्भुगतान की योजना बनाएं</h2>
+      <p class="section-sub">अपनी मासिक ईएमआई, कुल ब्याज और कुल भुगतान की तुरंत गणना करें।</p>
+    </div>
+    <div class="calc-wrap reveal">
+      <div>
+        <div class="calc-header">
+          <h3>लोन कैलकुलेटर</h3>
+          <p>अपनी ईएमआई की गणना के लिए स्लाइडर्स को समायोजित करें</p>
+        </div>
+        <div class="calc-field">
+          <label>लोन राशि <span id="loanDisplay">₹ 10,00,000</span></label>
+          <input type="range" id="loanAmount" min="50000" max="5000000" step="50000" value="1000000">
+        </div>
+        <div class="calc-field">
+          <label>ब्याज दर (% प्रति वर्ष) <span id="rateDisplay">10.5%</span></label>
+          <input type="range" id="interestRate" min="5" max="24" step="0.5" value="10.5">
+        </div>
+        <div class="calc-field">
+          <label>लोन अवधि (वर्ष) <span id="tenureDisplay">5 Years</span></label>
+          <input type="range" id="loanTenure" min="1" max="30" step="1" value="5">
+        </div>
+        <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"><i class="fas fa-file-alt"></i> इस लोन के लिए आवेदन करें</button>
+      </div>
+      <div class="calc-results">
+        <div class="calc-result-card">
+          <div class="label">मासिक ईएमआई</div>
+          <div class="value" id="monthlyEMI">₹ 21,497</div>
+        </div>
+        <div class="calc-result-card sub">
+          <div class="label">मूल राशि</div>
+          <div class="value" id="principalDisplay">₹ 10,00,000</div>
+        </div>
+        <div class="calc-result-card sub">
+          <div class="label">कुल देय ब्याज</div>
+          <div class="value" id="totalInterest">₹ 2,89,840</div>
+        </div>
+        <div class="calc-result-card sub">
+          <div class="label">कुल देय राशि</div>
+          <div class="value" id="totalAmount">₹ 12,89,840</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-card reveal-s">
+        <div class="stat-icon"><i class="fas fa-smile"></i></div>
+        <div class="stat-number"><span class="counter" data-target="5000">0</span>+</div>
+        <p>संतुष्ट ग्राहक</p>
+      </div>
+      <div class="stat-card reveal-s">
+        <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+        <div class="stat-number"><span class="counter" data-target="1000">0</span>+</div>
+        <p>लोन स्वीकृतियां</p>
+      </div>
+      <div class="stat-card reveal-s">
+        <div class="stat-icon"><i class="fas fa-handshake"></i></div>
+        <div class="stat-number"><span class="counter" data-target="50">0</span>+</div>
+        <p>बैंकिंग भागीदार</p>
+      </div>
+      <div class="stat-card reveal-s">
+        <div class="stat-icon"><i class="fas fa-calendar-alt"></i></div>
+        <div class="stat-number"><span class="counter" data-target="10">0</span>+</div>
+        <p>वर्षों की सेवा</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-quote-left"></i> ग्राहक प्रतिक्रिया</div>
+      <h2 class="section-title">हमारे ग्राहक क्या कहते हैं</h2>
+      <p class="section-sub">पूरे छत्तीसगढ़ से हमारे खुश ग्राहकों की वास्तविक कहानियां।</p>
+    </div>
+    <div class="test-grid">
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="test-text">"Vishnu Finance ने मुझे सबसे कम ब्याज दर पर होम लोन दिलाने में मदद की। दस्तावेज़ीकरण पूरी तरह से उनकी टीम ने संभाला। अत्यधिक अनुशंसित!"</p>
+        <div class="test-author"><div class="test-avatar">RA</div><div><div class="test-name">Rahul Agrawal</div><div class="test-role">होम लोन, रायपुर</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="test-text">"मुझे अपने रिटेल स्टोर के लिए ₹25 लाख का बिजनेस लोन मिला। प्रक्रिया सुगम थी और टीम ने हर कदम पर मेरा मार्गदर्शन किया। धन्यवाद Vishnu Finance!"</p>
+        <div class="test-author"><div class="test-avatar">PS</div><div><div class="test-name">Priya Sharma</div><div class="test-role">बिजनेस लोन, भिलाई</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="test-text">"सरकारी कर्मचारियों के लिए उत्कृष्ट सेवा। मुझे न्यूनतम कागजी कार्रवाई के साथ 48 घंटे के भीतर पर्सनल लोन मिल गया। बहुत ही पेशेवर टीम।"</p>
+        <div class="test-author"><div class="test-avatar">SK</div><div><div class="test-name">Sunil Kumar</div><div class="test-role">पर्सनल लोन, दुर्ग</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p class="test-text">"उन्होंने बहुत प्रतिस्पर्धी दर पर मेरी संपत्ति के विरुद्ध मॉर्गेज लोन की व्यवस्था की। पूरी प्रक्रिया पारदर्शी थी और कोई छिपा शुल्क नहीं था।"</p>
+        <div class="test-author"><div class="test-avatar">AV</div><div><div class="test-name">Anita Verma</div><div class="test-role">मॉर्गेज लोन, बिलासपुर</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="test-text">"रायपुर में सबसे अच्छी फाइनेंस कंपनी! उन्होंने मेरा व्हीकल लोन सिर्फ 2 दिनों में स्वीकृत कर दिया। ईएमआई विकल्प बहुत लचीला और किफायती है।"</p>
+        <div class="test-author"><div class="test-avatar">MK</div><div><div class="test-name">Manoj Kushwaha</div><div class="test-role">व्हीकल लोन, रायपुर</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="test-text">"पहली बार घर खरीदने वाले के रूप में मैं लोन प्रक्रिया को लेकर भ्रमित था। Vishnu Finance ने मुझे हर चीज़ में मार्गदर्शन दिया। मेरा सपना सच कर दिया!"</p>
+        <div class="test-author"><div class="test-avatar">DP</div><div><div class="test-name">Deepak Patel</div><div class="test-role">होम लोन, कोरबा</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+        <p class="test-text">"मैं एक छोटा व्यवसाय चलाता हूं और मुझे कार्यशील पूंजी की आवश्यकता थी। उनका सीसी लिमिट फाइनेंस समाधान एकदम सही था। केवल उपयोग की गई राशि पर ब्याज लगता है।"</p>
+        <div class="test-author"><div class="test-avatar">SY</div><div><div class="test-name">Suresh Yadav</div><div class="test-role">सीसी लिमिट, राजनांदगांव</div></div></div>
+      </div>
+      <div class="test-card reveal-s">
+        <div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="test-text">"पेशेवर परामर्श और पूर्ण दस्तावेज़ीकरण सहायता। उन्होंने पूरी लोन प्रक्रिया को तनाव मुक्त बना दिया। प्रोजेक्ट लोन के लिए अत्यधिक अनुशंसित।"</p>
+        <div class="test-author"><div class="test-avatar">RJ</div><div><div class="test-name">Ritu Jain</div><div class="test-role">प्रोजेक्ट लोन, रायगढ़</div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners" id="partners">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-handshake"></i> बैंकिंग भागीदार</div>
+      <h2 class="section-title">हमारे विश्वसनीय बैंकिंग भागीदार</h2>
+      <p class="section-sub">हम आपको सर्वोत्तम लोन सौदे दिलाने के लिए भारत के अग्रणी बैंकों के साथ काम करते हैं।</p>
+    </div>
+    <div class="partner-grid reveal-s">
+      <div class="partner-item">State Bank of India</div>
+      <div class="partner-item">HDFC Bank</div>
+      <div class="partner-item">ICICI Bank</div>
+      <div class="partner-item">Axis Bank</div>
+      <div class="partner-item">Punjab National Bank</div>
+      <div class="partner-item">Bank of Baroda</div>
+      <div class="partner-item">Union Bank</div>
+      <div class="partner-item">Canara Bank</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-question-circle"></i> सामान्य प्रश्न</div>
+      <h2 class="section-title">अक्सर पूछे जाने वाले प्रश्न</h2>
+      <p class="section-sub">हमारी लोन सेवाओं के बारे में सामान्य प्रश्नों के उत्तर खोजें।</p>
+    </div>
+    <div class="faq-grid">
+      <div class="faq-item active reveal-s">
+        <button class="faq-question">होम लोन के लिए किन दस्तावेज़ों की आवश्यकता होती है? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>होम लोन के लिए आपको केवाईसी दस्तावेज़ (आधार, पैन), संपत्ति के कागजात, आय प्रमाण (पिछले 2 वर्षों की सैलरी स्लिप/आईटीआर), पिछले 6 महीने का बैंक स्टेटमेंट और संपत्ति मूल्यांकन रिपोर्ट की आवश्यकता होती है। हम पूरी दस्तावेज़ीकरण प्रक्रिया में आपकी सहायता करते हैं।</p></div>
+      </div>
+      <div class="faq-item reveal-s">
+        <button class="faq-question">बिजनेस लोन पर ब्याज दर क्या है? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>बिजनेस लोन की ब्याज दरें आपकी क्रेडिट प्रोफाइल, लोन राशि और व्यवसाय इतिहास के आधार पर 9% से 18% प्रति वर्ष तक होती हैं। हम आपको आपकी प्रोफाइल के अनुसार सबसे प्रतिस्पर्धी दरें देने वाले बैंकों से जोड़ते हैं।</p></div>
+      </div>
+      <div class="faq-item reveal-s">
+        <button class="faq-question">मैं अपनी संपत्ति के विरुद्ध कितना लोन ले सकता हूं? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>मॉर्गेज लोन की राशि आपकी संपत्ति के बाजार मूल्य पर निर्भर करती है। आमतौर पर, बैंक संपत्ति मूल्य का 60-70% प्रदान करते हैं। वाणिज्यिक संपत्तियों के लिए प्रतिशत भिन्न हो सकता है। हमारी टीम आपको अधिकतम मूल्यांकन दिलाने में मदद करती है।</p></div>
+      </div>
+      <div class="faq-item reveal-s">
+        <button class="faq-question">व्हीकल लोन की प्रक्रिया में कितना समय लगता है? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>व्हीकल लोन न्यूनतम दस्तावेज़ीकरण के साथ 24-48 घंटे के भीतर स्वीकृत किया जा सकता है। आपको केवाईसी दस्तावेज़, आय प्रमाण और वाहन कोटेशन की आवश्यकता होती है। हम त्वरित प्रक्रिया और भुगतान सुनिश्चित करते हैं।</p></div>
+      </div>
+      <div class="faq-item reveal-s">
+        <button class="faq-question">लोन आवेदन के लिए किन दस्तावेज़ों की आवश्यकता होती है? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>आवश्यक बुनियादी दस्तावेज़ हैं: आधार कार्ड, पैन कार्ड, पता प्रमाण, बैंक स्टेटमेंट (पिछले 6 महीने), आय प्रमाण (सैलरी स्लिप या आईटीआर) और पासपोर्ट साइज़ फोटो। अतिरिक्त दस्तावेज़ लोन प्रकार के आधार पर भिन्न हो सकते हैं।</p></div>
+      </div>
+      <div class="faq-item reveal-s">
+        <button class="faq-question">मैं अपने लोन पर सबसे कम ब्याज दर कैसे प्राप्त कर सकता हूं? <i class="fas fa-chevron-down"></i></button>
+        <div class="faq-answer"><p>ब्याज दरें आपके CIBIL स्कोर, आय स्थिरता, लोन राशि और पुनर्भुगतान अवधि पर निर्भर करती हैं। हम आपकी प्रोफाइल का विश्लेषण करते हैं और सर्वोत्तम दरें देने वाले बैंकों से आपको जोड़ते हैं। अच्छा क्रेडिट स्कोर (750+) कम दरें पाने में मदद करता है।</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="section-label"><i class="fas fa-envelope"></i> संपर्क करें</div>
+      <h2 class="section-title">हमसे जुड़ें</h2>
+      <p class="section-sub">शुरू करने के लिए तैयार हैं? लोन के लिए आवेदन करें या मुफ्त परामर्श के लिए हमें कॉल करें।</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-info reveal">
+        <div class="contact-card">
+          <i class="fas fa-phone-alt"></i>
+          <div><h4>हमें कॉल करें</h4><p><a href="tel:8839215457" style="color:var(--gold);font-weight:600">8839215457</a></p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-map-marker-alt"></i>
+          <div><h4>कार्यालय का पता</h4><p>शीतला चौक, पानी टंकी के पास, भाटागाँव, रायपुर (छत्तीसगढ़)</p></div>
+        </div>
+        <div class="contact-card">
+          <i class="fas fa-clock"></i>
+          <div><h4>कार्य समय</h4><p>सोम - शनि: सुबह 10:00 - शाम 7:00 | रविवार: अपॉइंटमेंट द्वारा</p></div>
+        </div>
+        <a href="https://wa.me/918839215457?text=Hello%20Vishnu%20Finance%20Services,%20I%20need%20loan%20assistance" target="_blank" rel="noopener" class="btn btn-whatsapp" style="justify-content:center;padding:16px"><i class="fab fa-whatsapp"></i> व्हाट्सएप पर चैट करें</a>
+        <a href="tel:8839215457" class="btn btn-primary" style="justify-content:center;padding:16px"><i class="fas fa-phone"></i> कॉल करने के लिए क्लिक करें</a>
+      </div>
+      <div class="contact-form reveal-r">
+        <h3>लोन के लिए आवेदन करें</h3>
+        <form id="loanForm" onsubmit="submitForm(event)">
+          <div class="form-row">
+            <div class="form-group"><input type="text" placeholder="पूरा नाम *" required></div>
+            <div class="form-group"><input type="tel" placeholder="मोबाइल नंबर *" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><input type="email" placeholder="ईमेल पता"></div>
+            <div class="form-group">
+              <select required>
+                <option value="">लोन प्रकार चुनें *</option>
+                <option>पर्सनल लोन</option>
+                <option>बिजनेस लोन</option>
+                <option>होम लोन</option>
+                <option>मॉर्गेज लोन</option>
+                <option>व्हीकल लोन</option>
+                <option>प्रोजेक्ट लोन</option>
+                <option>सीसी लिमिट फाइनेंस</option>
+                <option>प्लॉट लोन</option>
+                <option>कंस्ट्रक्शन लोन</option>
+                <option>प्लॉट + कंस्ट्रक्शन लोन</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><input type="number" placeholder="लोन राशि (₹)"></div>
+            <div class="form-group"><input type="text" placeholder="शहर / स्थान"></div>
+          </div>
+          <div class="form-group"><textarea placeholder="संदेश (वैकल्पिक)"></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:16px"><i class="fas fa-paper-plane"></i> आवेदन जमा करें</button>
+        </form>
+      </div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe title="Vishnu Finance Services, Bhatagaon Raipur location on Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14876.448542746!2d81.603!3d21.241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a28dd1e2b1b2b2b%3A0x7b2b2b2b2b2b2b!2sBhatagaon%2C+Raipur%2C+Chhattisgarh!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo"><img src="logo.png" alt="Vishnu Finance Services" loading="lazy"></div>
+        <h3>Vishnu <span>Finance</span> Services</h3>
+        <p>पूरे छत्तीसगढ़ में आपका विश्वसनीय वित्त भागीदार। हम त्वरित प्रक्रिया और न्यूनतम दस्तावेज़ीकरण के साथ सरकारी और निजी बैंकों के माध्यम से संपूर्ण लोन समाधान प्रदान करते हैं।</p>
+        <div class="footer-social">
+          <a href="https://facebook.com/vishnufinance" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://instagram.com/vishnufinance" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/vishnufinance" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+          <a href="https://linkedin.com/company/vishnufinance" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/918839215457" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>त्वरित लिंक</h4>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fas fa-chevron-right"></i> होम</a></li>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i> हमारे बारे में</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> सेवाएं</a></li>
+          <li><a href="#calculator"><i class="fas fa-chevron-right"></i> ईएमआई कैलकुलेटर</a></li>
+          <li><a href="#faq"><i class="fas fa-chevron-right"></i> सामान्य प्रश्न</a></li>
+          <li><a href="#contact"><i class="fas fa-chevron-right"></i> संपर्क</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>हमारी सेवाएं</h4>
+        <ul class="footer-links">
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> होम लोन</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> पर्सनल लोन</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> बिजनेस लोन</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> मॉर्गेज लोन</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> व्हीकल लोन</a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i> प्रोजेक्ट लोन</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>संपर्क जानकारी</h4>
+        <ul class="footer-contact">
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:8839215457" style="color:var(--muted)">8839215457</a></li>
+          <li><i class="fas fa-map-marker-alt"></i> शीतला चौक, पानी टंकी के पास, भाटागाँव, रायपुर, छत्तीसगढ़</li>
+          <li><i class="fas fa-envelope"></i> info@vishnufinanceservices.in</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Vishnu Finance Services. सर्वाधिकार सुरक्षित। All Rights Reserved.</span>
+      <span>Website Designed by <a href="https://raywebservices.netlify.app/" target="_blank" rel="noopener" style="color:var(--gold);font-weight:600;">Ray Services</a> <a href="tel:7746969000" style="color:var(--muted);">7746969000</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLOATING -->
+<a href="https://wa.me/918839215457?text=Hello%20Vishnu%20Finance%20Services,%20I%20need%20loan%20assistance" target="_blank" rel="noopener" class="wa-float" aria-label="WhatsApp">
+  <span class="wa-float-tip">हमसे चैट करें</span>
+  <span class="wa-float-btn"><i class="fab fa-whatsapp"></i></span>
+</a>
+
+<!-- BACK TO TOP -->
+<button class="btt" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- RAY SERVICES CREDIT -->
+<div class="ray-credit">
+  <a href="https://raywebservices.netlify.app/" target="_blank" rel="noopener" title="Website Designed by Ray Services">
+    <i class="fas fa-code"></i> Ray Services <span style="color:var(--muted);font-weight:400;">7746969000</span>
+  </a>
+</div>
+
+<!-- LOAN MODAL -->
+<div class="modal-overlay" id="loanModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <h3>अपनी लोन पात्रता जांचें</h3>
+    <p>नीचे विवरण भरें और हम तुरंत आपकी पात्रता जांच लेंगे।</p>
+    <form onsubmit="event.preventDefault();var m=document.createElement('div');m.style.cssText='padding:16px;background:rgba(201,168,76,.1);border-radius:10px;color:var(--gold);margin-top:16px;text-align:center;font-size:14px';m.textContent='धन्यवाद! हम शीघ्र ही आपसे संपर्क करेंगे।';this.replaceWith(m);">
+      <div class="form-group"><input type="text" placeholder="पूरा नाम *" required></div>
+      <div class="form-group"><input type="tel" placeholder="मोबाइल नंबर *" required></div>
+      <div class="form-group">
+        <select required>
+          <option value="">लोन प्रकार चुनें *</option>
+          <option>पर्सनल लोन</option>
+          <option>बिजनेस लोन</option>
+          <option>होम लोन</option>
+          <option>मॉर्गेज लोन</option>
+          <option>व्हीकल लोन</option>
+          <option>प्रोजेक्ट लोन</option>
+        </select>
+      </div>
+      <div class="form-group"><input type="number" placeholder="मासिक आय (₹) *" required></div>
+      <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">पात्रता जांचें</button>
+    </form>
+  </div>
+</div>
+
+<script>
+// ===== PRELOADER =====
+window.addEventListener('load',()=>{
+  setTimeout(()=>{
+    document.getElementById('preloader').classList.add('hide');
+  },400);
+});
+
+// ===== SCROLL PROGRESS =====
+const scrollProgress = document.getElementById('scrollProgress');
+window.addEventListener('scroll',()=>{
+  const h=document.documentElement.scrollHeight-window.innerHeight;
+  scrollProgress.style.width=(window.scrollY/h*100)+'%';
+});
+
+// ===== NAVBAR =====
+const navbar=document.getElementById('navbar');
+const navToggle=document.getElementById('navToggle');
+const navLinks=document.getElementById('navLinks');
+const navOverlay=document.getElementById('navOverlay');
+
+window.addEventListener('scroll',()=>{
+  navbar.classList.toggle('scrolled',window.scrollY>60);
+  document.getElementById('backToTop').classList.toggle('show',window.scrollY>500);
+});
+
+function closeNav(){
+  navToggle.classList.remove('active');
+  navLinks.classList.remove('open');
+  navOverlay.classList.remove('open');
+  document.body.style.overflow='';
+}
+
+navToggle.addEventListener('click',()=>{
+  navToggle.classList.toggle('active');
+  navLinks.classList.toggle('open');
+  navOverlay.classList.toggle('open');
+  document.body.style.overflow=navLinks.classList.contains('open')?'hidden':'';
+});
+
+navOverlay.addEventListener('click',closeNav);
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',closeNav));
+
+// ===== ACTIVE NAV LINK =====
+const sections=document.querySelectorAll('section[id]');
+window.addEventListener('scroll',()=>{
+  let current='';
+  sections.forEach(s=>{
+    const top=s.offsetTop-120;
+    if(window.scrollY>=top) current=s.getAttribute('id');
+  });
+  document.querySelectorAll('.nav-links a:not(.nav-cta)').forEach(a=>{
+    a.classList.toggle('active',a.getAttribute('href')==='#'+current);
+  });
+});
+
+// ===== SCROLL REVEAL =====
+const revealObserver=new IntersectionObserver(e=>{
+  e.forEach(entry=>{
+    if(entry.isIntersecting) entry.target.classList.add('visible');
+  });
+},{threshold:.08});
+
+document.querySelectorAll('.reveal,.reveal-l,.reveal-r,.reveal-s').forEach(el=>revealObserver.observe(el));
+
+// ===== COUNTER =====
+const counterObserver=new IntersectionObserver(e=>{
+  e.forEach(entry=>{
+    if(entry.isIntersecting){
+      const el=entry.target;
+      const target=parseInt(el.dataset.target);
+      let current=0;
+      const step=Math.ceil(target/70);
+      const timer=setInterval(()=>{
+        current+=step;
+        if(current>=target){current=target;clearInterval(timer);}
+        el.textContent=current.toLocaleString('en-IN');
+      },25);
+      counterObserver.unobserve(el);
+    }
+  });
+},{threshold:.5});
+
+document.querySelectorAll('.counter').forEach(el=>counterObserver.observe(el));
+
+// ===== FAQ =====
+document.querySelectorAll('.faq-question').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.parentElement;
+    const isActive=item.classList.contains('active');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('active'));
+    if(!isActive) item.classList.add('active');
+  });
+});
+
+// ===== EMI CALCULATOR =====
+const loanAmt=document.getElementById('loanAmount');
+const intRate=document.getElementById('interestRate');
+const loanTen=document.getElementById('loanTenure');
+
+function fmt(n){return '₹ '+n.toLocaleString('en-IN');}
+
+function calcEMI(){
+  const P=parseFloat(loanAmt.value);
+  const r=parseFloat(intRate.value)/12/100;
+  const n=parseFloat(loanTen.value)*12;
+
+  document.getElementById('loanDisplay').textContent=fmt(P);
+  document.getElementById('rateDisplay').textContent=intRate.value+'%';
+  document.getElementById('tenureDisplay').textContent=loanTen.value+' वर्ष';
+
+  if(r===0){
+    const emi=P/n;
+    document.getElementById('monthlyEMI').textContent=fmt(Math.round(emi));
+    document.getElementById('totalInterest').textContent=fmt(0);
+    document.getElementById('totalAmount').textContent=fmt(P);
+  }else{
+    const emi=P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1);
+    const tp=emi*n;
+    const ip=tp-P;
+    document.getElementById('monthlyEMI').textContent=fmt(Math.round(emi));
+    document.getElementById('totalInterest').textContent=fmt(Math.round(ip));
+    document.getElementById('totalAmount').textContent=fmt(Math.round(tp));
+  }
+  document.getElementById('principalDisplay').textContent=fmt(P);
+}
+
+loanAmt.addEventListener('input',calcEMI);
+intRate.addEventListener('input',calcEMI);
+loanTen.addEventListener('input',calcEMI);
+calcEMI();
+
+// ===== FORM =====
+function submitForm(e){
+  e.preventDefault();
+  const f=e.target;
+  const msg=document.createElement('div');
+  msg.style.cssText='padding:16px;background:rgba(201,168,76,.1);border-radius:10px;color:var(--gold);margin-top:16px;text-align:center;font-size:14px';
+  msg.textContent='आपके आवेदन के लिए धन्यवाद! हम शीघ्र ही आपसे संपर्क करेंगे।';
+  f.replaceWith(msg);
+}
+
+// ===== MODAL =====
+function openModal(){document.getElementById('loanModal').classList.add('show');}
+function closeModal(){document.getElementById('loanModal').classList.remove('show');}
+document.getElementById('loanModal').addEventListener('click',function(e){if(e.target===this)closeModal();});
+
+// ===== KEYBOARD =====
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+</script>
+</body>
+</html>
